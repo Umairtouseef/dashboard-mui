@@ -5,8 +5,6 @@ import { Iconify } from 'src/components/iconify';
 // @ts-ignore
 import { Email } from 'src/typescript-Interface/email';
 
-import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
-
 interface EmailContentProps {
     email: Email | null;
 }
