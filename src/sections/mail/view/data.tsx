@@ -1,6 +1,5 @@
 import { Contact ,Message,} from "src/typescript-Interface/chat";
 
-
  const initialContacts: Contact[] =[
   {
     "id": "1",
@@ -236,6 +235,8 @@ const initialMessages: Record<string, Message[]> = {
     { id: '7', text: 'For sure!', sender: 'James Carter', timestamp: 'Just now', isOwn: false }
   ]
 };
+
+
 
 
 export { initialContacts, initialMessages };

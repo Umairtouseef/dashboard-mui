@@ -20,6 +20,8 @@ export const SignInPage = lazy(() => import('src/pages/sign-in'));
 export const ProductsPage = lazy(() => import('src/pages/products'));
 export const JobsPage = lazy(() => import('src/pages/job'));
 export const MailsPage = lazy(() => import('src/pages/mail'));
+export const CalendarPage = lazy(() => import('src/pages/calendar'));
+
 
 
 export const Page404 = lazy(() => import('src/pages/page-not-found'));
@@ -58,8 +60,10 @@ export function Router() {
         { path: 'order', element: <OrderPage /> },
         { path: 'job', element: <JobsPage /> },
         { path: 'mail', element: <MailsPage /> },
+        { path: 'calendar', element: <CalendarPage /> },
 
 
+        
 
 
       ],

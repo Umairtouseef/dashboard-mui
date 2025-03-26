@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Card, Typography } from '@mui/material';
 import Sidebar from '../Sidebar';
-import EmailList from '../EmailList';
 import EmailContent from '../EmailContent';
 import ReplyBox from '../ReplyBox';
 import ChatSidebar from 'src/sections/mail/ChatSidebar';
@@ -25,6 +24,7 @@ const EmailUI: React.FC = () => {
   const [contacts, setContacts] = useState<Contact[]>(initialContacts);
   const [selectedContact, setSelectedContact] = useState<Contact | null>(null);
   const [messages, setMessages] = useState<Record<string, Message[]>>(initialMessages);
+  const [open, setOpen] = useState(false);
 
   return (
     // <Box sx={{ display: "flex", height: "100vh" }}>
@@ -41,7 +41,7 @@ const EmailUI: React.FC = () => {
     <DashboardContent>
       <Box display="flex" alignItems="center" mb={5}>
         <Typography variant="h4" flexGrow={1}>
-          Chats
+          Mails 
         </Typography>
       </Box>
       <Card

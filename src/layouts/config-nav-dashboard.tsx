@@ -47,17 +47,22 @@ export const navData = [
   {
     title: 'Order',
     path: '/order',
-    icon: icon('ic-lock'),  
+    icon: icon('ic-order'),  
   },
   {
     title: 'Job',
     path: '/job',
-    icon: icon('ic-lock'),
+    icon: icon('ic-job'),
   },
   {
     title: 'Mail',
     path: '/mail',
-    icon: icon('ic-lock'),
+    icon: icon('ic-mail'),
+  },
+  {
+    title: 'Calendar',
+    path: '/calendar',
+    icon: icon('ic-mail'),
   },
   {
     title: 'Not found',
